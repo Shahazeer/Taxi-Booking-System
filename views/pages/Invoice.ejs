@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Invoice</title>
+    <style>
+      .space{
+
+      }
+    </style>
+
+<!--
+
+Breezed Template
+
+https://templatemo.com/tm-543-breezed
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/templatemo-breezed3.css">
+
+
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/owl-carousel.css">  -->
+
+    <!-- <link rel="stylesheet" href="assets/css/lightbox.css">  -->
+
+    </head>
+    
+  <!-- As a link -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#" input type="button" value="Go back!" onclick="history.back()" style="color:white;margin-left: 300px;">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" style="color:white;   margin-left: 20px;"href="/">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+        
+  
+        <div class="login-wrap">
+          <div class="login-html">
+              <input id="tab-2" type="radio" name="tab" class="sign-up"checked><label for="tab-2" class="tab" >Invoice</label>
+              <div class="login-form">
+                  <form class="sign-up-htm">
+                    <div class="group">
+                        <label for="user" class="label">Date</label>
+                        <input id="user" readonly type="text" class="input" value="<%=date%>">
+                    </div>
+                      <div class="group">
+                          <label for="user" class="label">Passenger Name</label>
+                          <input id="user" readonly type="text" class="input" value="<%=passenger%>">
+                      </div>
+                      <div class="group">
+                        <label for="user" class="label">Driver ID</label>
+                        <input id="user" readonly type="text" class="input" value="<%=driver_id%>">
+                    </div>
+                    <div class="group">
+                      <label for="user" class="label">Destination name</label>
+                      <input id="user" readonly type="text" class="input" value="<%=dest%>">
+                  </div>
+                  <div class="group">
+                    <label for="user" class="label">Taxi type</label>
+                    <input id="user" readonly type="text" class="input" value="<%=cabName%>">
+                </div>
+                  <div class="group">
+                    <label for="user" class="label">Total Amount</label>
+                    <input id="user" readonly type="number" class="input" value="<%=bill_amount%>">
+                </div>
+                <p style="color: rgb(255, 255, 255);" style="font-size: 1rem;">Thank you for booking your ride with us. Your cab has been confirmed and will be arriving at your pickup location.</p>
+                      
+                      <div class="hr"></div>
+                     
+                  </div>
+                </form>
+              </div>
+          </div>
+      </div>  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+</html> 
